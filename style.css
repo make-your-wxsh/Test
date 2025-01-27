@@ -1,63 +1,75 @@
-/* styles/style.css */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
-/* 초기 스타일 리셋 */
-* {
+body {
+    margin: 0;
+    font-family: Pretendard-Regular;
+    background-color: #f9fce5;
+    color: #000000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333d29;
+    padding: 10px 0;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: #c2c5aa;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* 바디 스타일 */
-body {
-    font-family: Arial, sans-serif; /* 기본 폰트 설정 */
-    background-color: black; /* 배경색 검정 */
-    color: white; /* 텍스트 색상 흰색 */
-}
-
-/* 헤더 스타일 */
-header {
-    background-color: purple; /* 헤더 배경색 보라색 */
-    padding: 10px; /* 패딩 10px */
-}
-
-/* 네비게이션 리스트 스타일 */
-nav ul {
-    list-style-type: none; /* 리스트 스타일 제거 */
-    display: flex; /* 플렉스 박스 사용 */
-    justify-content: center; /* 가운데 정렬 */
-}
-
-/* 네비게이션 아이템 스타일 */
 nav ul li {
-    margin: 0 15px; /* 좌우 마진 15px */
+    margin: 0 15px;
 }
 
-/* 네비게이션 링크 스타일 */
-nav a {
-    color: white; /* 링크 색상 흰색 */
-    text-decoration: none; /* 밑줄 제거 */
-    font-weight: bold; /* 글씨 두껍게 */
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-/* 메인 콘텐츠 스타일 */
+nav ul li a:hover {
+    color: #a8a8a8;
+}
+
 main {
-    padding: 20px; /* 패딩 20px */
+    padding: 50px;
+    text-align: center;
 }
 
-/* 섹션 스타일 */
-section {
-    margin: 20px 0; /* 상하 마진 20px */
-    padding: 20px; /* 패딩 20px */
-    border: 1px solid purple; /* 보라색 테두리 */
-    border-radius: 5px; /* 테두리 둥글게 */
+main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-/* 푸터 스타일 */
+main p {
+    font-size: 18px;
+}
+
+
 footer {
-    text-align: center; /* 가운데 정렬 */
-    padding: 10px; /* 패딩 10px */
-    background-color: purple; /* 푸터 배경색 보라색 */
-    position: fixed; /* 고정 위치 */
-    width: 100%; /* 너비 100% */
-    bottom: 0; /* 하단 고정 */
+    background-color: #333d29;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
